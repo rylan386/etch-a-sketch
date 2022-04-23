@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Etch A Sketch</title>
+</head>
+<body>
+    <div class="body">
+        <h1>Etch-A-Sketch</h1>
+        <div class="container">
+            <div class="controls">
+                <h4>Select grid size</h4>
+                <p id="number">8 x 8</p>
+                <input type="range" id="input" min="4" max="50" value="8" />
+            </div>
+            <div class="buttons">
+                <button id="reset">reset</button>
+                <div class="color">
+                    <p>Color Picker</p>
+                    <input type="color" id="color" value="#FF0000" />
+                </div>
+            </div>
+        </div>
+        <div class="grid"></div>
+    </div>
+</body>
+</html>
