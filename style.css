@@ -4,7 +4,6 @@
   }
 
 body{
-    height: 100vh;
     font-family: 'Orbitron', sans-serif;
     background: linear-gradient(150deg, rgb(64, 136, 106), rgba(212, 0, 255, 0) 70.71%),
                 linear-gradient(360deg, rgba(161, 17, 154, 0.459), rgba(211, 4, 201, 0.658) 100%),
@@ -14,7 +13,6 @@ body{
 .body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -86,13 +84,8 @@ h1 {
 
 .buttons {
     display: flex;
-    align-items: center;
+    align-items: center; 
     gap: 40px;
-}
-
-.grid-container {
-    display: flex;
-    justify-content: center;
 }
 
 .grid {
@@ -101,6 +94,7 @@ h1 {
     width: 500px;
     height: 500px;
     border: 10px ridge;
+    margin-bottom: 5em;
 }
 .gridsize {
     background-color: white;
@@ -133,6 +127,7 @@ button:active{
     -webkit-appearance: none;
     background: transparent;
   }
+
 #input::-webkit-slider-runnable-track {
     width: 100%;
     height: 10px;
@@ -142,6 +137,7 @@ button:active{
     border-radius: 4px;
     border: 1px solid #010101;
   }
+
 #input::-webkit-slider-thumb {
     box-shadow: 0px 0px 4px #000031;
     border: 2px solid #1E0000;
@@ -152,4 +148,89 @@ button:active{
     cursor: pointer;
     -webkit-appearance: none;
     margin: -5px;
+  }
+
+.footer {
+    position: relative;
+    bottom: 0;
+    color: rgb(238, 238, 12);
+    text-shadow: 1px 1px 3px red, 0 0 10px blue, 0 0 10px blue;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(238, 238, 12);
+    transition: 0.3s;
+    
+}
+
+a:hover {
+    color: #c926b3;
+    text-shadow: 1px 1px 3px rgb(217, 255, 0), 0 0 10px rgb(0, 255, 255), 0 0 10px rgb(234, 0, 255);
+}
+
+  @media(min-width:350px) and (max-width:650px){
+      html {
+          height: 100%;
+      }
+
+      .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 300px;
+      }
+
+      .body {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .body > h1 {
+          font-size: 40px;
+      }
+      
+      .grid {
+          width: 300px;
+          height: 300px;
+          margin-bottom: 2em;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+    }
+  }
+
+  @media (max-width: 349px) {
+      html {
+          height: 100%;
+      }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body > h1 {
+        font-size: 25px;
+    }
+    
+    .grid {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 2em;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+    }
   }
