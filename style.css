@@ -10,6 +10,9 @@ body{
                 linear-gradient(336deg, rgb(0, 217, 255), rgba(174, 0, 255, 0) 70.71%);
 }
 
+html {
+    height: 100%;
+}
 .body {
     display: flex;
     flex-direction: column;
@@ -153,6 +156,11 @@ button:active{
 .footer {
     position: relative;
     bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: rgb(238, 238, 12);
     text-shadow: 1px 1px 3px red, 0 0 10px blue, 0 0 10px blue;
 }
@@ -170,10 +178,6 @@ a:hover {
 }
 
   @media(min-width:350px) and (max-width:650px){
-      html {
-          height: 100%;
-      }
-
       .container {
           display: flex;
           flex-direction: column;
@@ -193,20 +197,11 @@ a:hover {
       .grid {
           width: 300px;
           height: 300px;
-          margin-bottom: 2em;
+          margin-bottom: 3em;
       }
-
-      .footer {
-        position: absolute;
-        bottom: 0;
-    }
   }
 
   @media (max-width: 349px) {
-      html {
-          height: 100%;
-      }
-
     .container {
         display: flex;
         flex-direction: column;
@@ -226,11 +221,6 @@ a:hover {
     .grid {
         width: 250px;
         height: 250px;
-        margin-bottom: 2em;
-    }
-
-    .footer {
-        position: absolute;
-        bottom: 0;
+        margin-bottom: 7em;
     }
   }
