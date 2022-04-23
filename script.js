@@ -5,6 +5,7 @@ const gridSize = document.querySelector(".gridsize");
 let color = document.getElementById("color");
 let number = document.getElementById("number");
 let active = false;
+let colorValue;
 
 function createGrid() {
     colorValue = document.getElementById("color").value;
