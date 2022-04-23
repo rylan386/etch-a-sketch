@@ -4,15 +4,13 @@
   }
 
 body{
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron', sans-serif; 
+    height: 100%;
     background: linear-gradient(150deg, rgb(64, 136, 106), rgba(212, 0, 255, 0) 70.71%),
                 linear-gradient(360deg, rgba(161, 17, 154, 0.459), rgba(211, 4, 201, 0.658) 100%),
                 linear-gradient(336deg, rgb(0, 217, 255), rgba(174, 0, 255, 0) 70.71%);
 }
 
-html {
-    height: 100%;
-}
 .body {
     display: flex;
     flex-direction: column;
@@ -178,6 +176,7 @@ a:hover {
 }
 
   @media(min-width:350px) and (max-width:650px){
+
       .container {
           display: flex;
           flex-direction: column;
